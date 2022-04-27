@@ -1,5 +1,5 @@
 /*手机�*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
 	.menu-list{
 		position: fixed;
 		width: 100%;
@@ -60,7 +60,7 @@
 		width: 80%;
 	}
 	.sou-bottom{
-		margin-bottom: 240px;
+		margin-bottom: 24vh;
 	}
 	.zFooter{
 		height: 60px;
