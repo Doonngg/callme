@@ -2,63 +2,6 @@ body {
     margin: 0;
     overflow: hidden;
 }
-/*
-* *----------------------------------
-*  Social
-* *----------------------------------
-*/
-
-.social-icon a {
-    position: absolute;
-    background: white;
-    color: white;
-    box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    width: 150px;
-    height: 80px;
-    transform-origin: 50% 50%;
-    transition: .15s ease-out;
-    z-index: 30;
-}
-.social-icon i {
-    position: absolute;
-    pointer-events: none;
-    z-index: 1000;
-    transition: .15s ease-out;
-}
-.youtube:hover a {
-    transform: rotate(45deg) scale(1.05);
-}
-.youtube:hover i {
-    color: #ec4c44;
-}
-.youtube a {
-    bottom: -40px;
-    left: -75px;
-    transform: rotate(45deg);
-}
-.youtube i {
-    bottom: 7px;
-    left: 7px;
-    color: #E62117;
-}
-.twitter:hover a {
-    transform: rotate(-45deg) scale(1.05);
-}
-.twitter:hover i {
-    color: #21c2ff;
-}
-.twitter a {
-    bottom: -40px;
-    right: -75px;
-    transform: rotate(-45deg);
-}
-.twitter i {
-    bottom: 7px;
-    right: 7px;
-    color: #00ACED;
-}
-
 
 
 *{
@@ -96,7 +39,7 @@ body {
 .menu-list-tab{
 	display: block;
 	width: 16.6%;
-	height: 100%;
+	height: 80px;
 	color: #ffffff;
 	font-size: 14px;
 	display: flex;
