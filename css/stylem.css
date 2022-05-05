@@ -1,5 +1,5 @@
 /*低分辨率电脑*/
-@media screen and (max-height: 600px) {
+@media screen and (max-height: 800px) {
 	.sou-bottom{
 		margin-bottom: 0;
 	}
