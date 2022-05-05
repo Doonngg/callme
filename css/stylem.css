@@ -1,4 +1,10 @@
-/*手机�*/
+/*低分辨率电脑*/
+@media screen and (max-height: 600px) {
+	.sou-bottom{
+		margin-bottom: 0;
+	}
+}
+/*手机版*/
 @media screen and (max-width: 500px) {
 	.header{
 		border: none;
@@ -51,7 +57,6 @@
 	.sou-top b{
 		font-size: 32px;
 		letter-spacing: 0.1em;
-		margin-top: 120px;
 	}
 	.sou-top div{
 		font-size: 12px;
@@ -63,6 +68,12 @@
 	.sou-box{
 		width: 80%;
 	}
+	.number-length{
+		right: 50px;
+	}
+	.sou-icon{
+		width: 8%;
+	}
 	.sou-bottom{
 		margin-bottom: 20vh;
 	}
@@ -71,7 +82,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		background: none;
 	}
 	.footer-left{
 		margin-left: 0;

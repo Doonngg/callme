@@ -1,15 +1,35 @@
+html,
+body {
+    height: 100%;
+}
+canvas {
+    display: block;
+}
+
 body {
     margin: 0;
     overflow: hidden;
 }
 
-
+input::input-placeholder{color:  #FFFFFF;} 
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #FFFFFF; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #FFFFFF; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19  */ 
+color: #FFFFFF; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10  */ 
+color: #FFFFFF; 
+}
 *{
 	text-decoration: none;
 }
 /*主色调*/
 :root{
-	--ViColor: #5E87F0;
+	--ViColor: #3166EF;
 }
 .header{
 	position: fixed;
@@ -57,11 +77,14 @@ body {
 	width: 0;
 	margin: 0 auto;
 	height: 2px;
-	background: #FFFFFF;
+	background: #ffffff;
 	transition: all .3s;
 }
 .menu-list-tab:hover::after{
 	width: 100%;
+}
+.menu-list-tab-active{
+	color: #ffffff;
 }
 .menu-list-tab-active::before{
 	position: absolute;
@@ -70,7 +93,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #FFFFFF;
+	background: #ffffff;
 	transition: all .3s;
 }
 .close-btn{
@@ -94,9 +117,10 @@ body {
 	margin-right: 40px;
 	border-radius: 4px;
 	cursor: pointer;
+	transition: all .3s;
+	color: #ffffff;
 }
 .sign-btn1:hover{
-	transition: all .3s;
 	background: #2953BF;
 }
 .zBody{
@@ -120,6 +144,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 }
 .sou-top{
 	color: #ffffff;
@@ -129,18 +154,16 @@ body {
 	justify-content: center;
 }
 .sou-top b{
-	font-size: 46px;
+	font-size: 48px;
 	text-align: center;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.16em;
 	color: #FFFFFF;
-	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-	margin-top: 180px;
 }
 .sou-top div{
-	font-size: 16px;
+	font-size: 14px;
 	color: rgba(255, 255, 255, 0.8);
-	margin-top: 10px;
 	text-align: center;
+	margin-top: 6px;
 }
 .sou-top span{
 	font-size: 24px;
@@ -149,9 +172,8 @@ body {
 	margin-right: 8px;
 }
 .sou-box{
-	width: 35vw;
+	width: 32vw;
 	height: 48px;
-	background: rgba(0, 0, 0, 0.01);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	box-sizing: border-box;
 	border-radius: 24px;
@@ -159,7 +181,23 @@ body {
 	flex-direction: row;
 	align-self: center;
 	justify-content: space-between;
-	margin-top: 40px;
+	margin-top: 56px;
+	transition: all .3s;
+	position: relative;
+}
+.number-length{
+	font-size: 12px;
+	border-radius: 2px;
+	color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	margin-top: -12px;
+	right: 70px;
+	width: 32px;
+	line-height: 24px;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.3);
+	display: none;
 }
 .sou-box input{
 	width: 90%;
@@ -171,9 +209,8 @@ body {
 	outline: none;
 }
 .sou-box:hover{
-	transition: all .3s;
-	border: 1px solid rgba(0, 0, 0, 0.01);
-	background: rgba(255, 255, 255 , 0.2);
+	border: 1px solid rgba(255, 255, 255, 0.01);
+	background: rgba(255, 255, 255, 0.2);
 }
 .sou-icon{
 	width: 5%;
@@ -190,23 +227,24 @@ body {
 	display: flex;
 	color: #FFFFFF;
 	font-size: 13px;
-	margin-bottom: 120px;
+	margin-bottom: 180px;
+	margin-top: 56px;
 }
 .sou-btn1,.sou-btn2{
 	width: 120px;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
+	font-size: 14px;
 	border-radius: 4px;
-	border: 1px solid rgba(255, 255, 255, 0.1);
 	box-sizing: border-box;
-	margin-top: 40px;
 	cursor: pointer;
 	transition: all .3s;
 }
 .sou-btn1{
 	background: var(--ViColor);
 	margin-right: 12px;
+	color: #FFFFFF;
 }
 .sou-btn1:hover{
 	background: #2953BF;
@@ -215,7 +253,7 @@ body {
 	background: rgba(255, 255, 255, 0.3);
 }
 .sou-btn2:hover{
-	background: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.25);
 }
 .zFooter{
 	width: 100%;
@@ -228,7 +266,6 @@ body {
 	flex-direction: row;
 	align-self: center;
 	justify-content: space-between;
-	background: rgba(255, 255, 255, 0.1);
 }
 .footer-left{
 	font-size: 13px;

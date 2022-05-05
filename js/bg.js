@@ -27,7 +27,7 @@ function init() {
     // Scene initialization
     camera.position.z = 55;
 
-    renderer.setClearColor("#000", 1);
+    renderer.setClearColor("#020", 1);
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.setPixelRatio(window.devicePixelRatio);
 
